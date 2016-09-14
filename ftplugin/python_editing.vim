@@ -56,7 +56,7 @@ function! PythonFoldExpr(lnum)
         return 0
     endif
     
-    if getline(a:lnum-1) =~ '^\(class\|def\)\s'
+    if getline(a:lnum-1) =~ '^\(class\|def\|async def\)\s'
         return 1
     endif
         
